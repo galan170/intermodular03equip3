@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a0a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('https://www.xtrafondos.com/wallpapers/el-juego-del-calamar-12930.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff0050;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #ff0050;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #e60045;
+  transform: scale(1.05);
+}
+
+.gallery {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ff0050;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.images img {
+  width: 300px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #111;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.sinopsis {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.sinopsis h2 {
+  color: #ff0050;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sinopsis p {
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+.personajes {
+  padding: 80px 40px;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #000 100%);
+  text-align: center;
+}
+
+.personajes h2 {
+  color: #ff0050;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 0, 80, 0.4);
+  border-radius: 20px;
+  padding: 25px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+  backdrop-filter: blur(4px);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 25px rgba(255, 0, 80, 0.6);
+  border: 2px solid rgba(255, 0, 80, 0.8);
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  color: #ff0050;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
